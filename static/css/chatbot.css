@@ -1,0 +1,72 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    background-color: #121212; /* Dark background */
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+/* Sidebar */
+.sidebar ul.list-group {
+    padding: 11px;
+}
+
+.sidebar ul.list-group-item {
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    border: none; /* Remove borders */
+    border-radius: 0; /* Ensure no border radius */
+    background-color: #000; /* Ensure background is black */
+    margin-bottom: 10px; /* Add spacing between items */
+    padding: 10px; /* Add padding inside chat items */
+}
+
+/* Chat Display */
+.chat-display {
+    background-color: #2e2e2e; /* Grey main chat area */
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+}
+
+/* Chat Input */
+.chat-input-area {
+    background-color: #2e2e2e;
+    border-top: 1px solid #444;
+}
+
+input#userInput {
+    height: 50px;
+    padding: 10px;
+    background-color: #9b9b9b; /* Darker input field */
+    border: none;
+    color: white;
+}
+
+/* Placeholder Text Color */
+input#userInput::placeholder {
+    color: #fff; /* Adjust as needed */
+}
+
+button#sendBtn {
+    width: 120px;
+    height: 50px;
+}
+
+/* Scrollbar Styling for Chat Area */
+.chat-display::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-display::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 4px;
+}
